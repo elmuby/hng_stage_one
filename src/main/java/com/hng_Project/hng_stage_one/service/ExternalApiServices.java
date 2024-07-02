@@ -26,7 +26,7 @@ public class ExternalApiServices {
 	}
 	
 	public WeatherData getLocationAndWeatherByIp(String ip) throws IOException {
-		String url = "http://api.weatherapi.com/v1/current.json?key=1982d90cf1054922b7a210636240107" + "&q=" + ip;
+		String url = "http://api.weatherapi.com/v1/current.json?key=" +apiKey + "&q=" + ip;
 		String response =  restTemplate.getForObject(url, String.class);
 		
 //		parsing json response
