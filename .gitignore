@@ -1,9 +1,8 @@
 HELP.md
+target/
 !.mvn/wrapper/maven-wrapper.jar
-# Exclude all target directories
-/target/
-# Specifically include the built JAR file in the root target directory
-!target/*.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
